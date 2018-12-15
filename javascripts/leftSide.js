@@ -41,7 +41,9 @@ $(function () {
                 e.preventDefault();
 
                 noteList.load('data/htmlFragment.html',function (response,status,xhr) {
-                    console.log(response);
+                    // console.log(response);
+                    noteList.show();
+                    hint.hide();
                 })
                 // noteList.show();
             })
@@ -381,7 +383,6 @@ $(function () {
             const target = 'start /dpatch ' + '\\myProjects';
             command(target);
         })
-
 
         //隐藏
         function hideTxt() {
